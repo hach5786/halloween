@@ -2,6 +2,5 @@
   "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
-  "editor.formatOnSave": true,
-  "editor.tabSize": 6
+  "editor.formatOnSave": true
 }

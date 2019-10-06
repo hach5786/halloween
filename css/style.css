@@ -1,0 +1,48 @@
+body{
+      font-family: 'Oswald', sans-serif;
+      font-size: 18px;
+}
+h1{
+      color: #fff;
+      font-size: 64px; /* Размер шрифта */
+      text-transform: uppercase; /* Всегда заглавные буквы */
+      max-width: 1000px;
+      margin: 0 auto;
+}
+h1 + p { /* стили применяются только для p который находится рядом с h1 */
+      color: #fff;      
+      text-transform: uppercase; /* Всегда заглавные буквы */
+}
+.wrapper { /* оболочка с контентом */
+      max-width: 1110px; /* ширина оболочки */
+      margin: 0 auto;
+}
+.wrapper-gray {
+      background-color: #F7F7F7;
+}
+.bg {
+      background-image: url(../img/banner.png); /* Подключаем фоновое изображение*/
+      background-repeat: no-repeat; /* Однофоновое изображение без повторения*/
+      background-position: center; /* Центруем изображение */
+      background-size: cover; /* Масшстабируем изображение с сохранением пропорций, так чтобы его ширина или высота равнялась ширине или высоте блока*/
+      padding: 300px 0; /* Внутренний отступы сверху и снизу 100px */
+      /* height: 740px; Высота изображения */
+      text-align: center; /* центруем тест по центру */
+}
+.stat {
+      text-align: center; /* центруем текст */
+      display: flex; /* юзаем flexbox */
+      justify-content: space-between; /* располагаем элементы от края до края*/
+      max-width: 900px; /* задаем ширину блока */
+      margin: -200px auto 0; /* поднимаем его на 200px вверх*/
+}
+.stat-item h2 {
+      font-size: 72px;
+      color: #F7654A;
+}
+.stat-item h3 {
+      font-size: 36px;
+}
+.stat-item p {
+      color: #999999;
+}
