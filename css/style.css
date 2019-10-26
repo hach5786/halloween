@@ -33,6 +33,7 @@ h2 {
       max-width: 1110px;
       /* ширина оболочки */
       margin: 0 auto;
+      margin-bottom: 20px;
 }
 
 .wrapper-gray {
@@ -171,6 +172,7 @@ h2 {
       font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 0.05em;
+      color: #000;
 }
 
 .grid {
@@ -238,4 +240,84 @@ h2 {
 .grid-photo-item img {
       width: 100%;
       height: 100%;
+}
+
+.box-feedback {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+}
+
+.box-feedback>div {
+      box-sizing: content-box;
+      flex-basis: 32%;
+      max-width: 32%;
+}
+
+.feedback {
+      background-color: #f7f7f7;
+      color: #999999;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      line-height: 21px;
+      padding: 20px 30px;
+}
+
+.feedback::before {
+      content: '';
+      background-image: url(../img/bq.svg);
+      background-repeat: no-repeat;
+      display: block;
+      width: 34px;
+      height: 28px;
+}
+
+.name {
+      font-size: 21px;
+      font-weight: 500;
+      letter-spacing: 0.42px;
+}
+
+.footer-contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      text-align: center;
+}
+
+.footer-contact>div {
+      flex-basis: 24%;
+      max-width: 24%;
+}
+
+.footer-contact h3 {
+      color: #999999;
+      font-size: 24px;
+}
+
+.footer-contact-info {
+      list-style: none;
+      padding-left: 0;
+}
+
+.footer-contact-mail {
+      color: #f7654a;
+}
+
+.box-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Open Sans', sans-serif;
+      color: #fff;
+}
+
+.box-footer a {
+      color: #f7654a;
+      text-decoration: none;
+}
+
+.footer {
+      background-color: #404149;
+      padding: 20px 0;
 }
