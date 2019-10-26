@@ -1,48 +1,241 @@
-body{
+body {
       font-family: 'Oswald', sans-serif;
       font-size: 18px;
 }
-h1{
+
+h1 {
       color: #fff;
-      font-size: 64px; /* Размер шрифта */
-      text-transform: uppercase; /* Всегда заглавные буквы */
+      font-size: 64px;
+      /* Размер шрифта */
+      text-transform: uppercase;
+      /* Всегда заглавные буквы */
       max-width: 1000px;
       margin: 0 auto;
+      line-height: 1.5;
 }
-h1 + p { /* стили применяются только для p который находится рядом с h1 */
-      color: #fff;      
-      text-transform: uppercase; /* Всегда заглавные буквы */
+
+h1+p {
+      /* стили применяются только для p который находится рядом с h1 */
+      color: #fff;
+      text-transform: uppercase;
+      /* Всегда заглавные буквы */
 }
-.wrapper { /* оболочка с контентом */
-      max-width: 1110px; /* ширина оболочки */
+
+h2 {
+      font-size: 36px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 100px;
+}
+
+.wrapper {
+      /* оболочка с контентом */
+      max-width: 1110px;
+      /* ширина оболочки */
       margin: 0 auto;
 }
+
 .wrapper-gray {
+      /* Серое надолежние на фоновое изображение */
       background-color: #F7F7F7;
 }
+
 .bg {
-      background-image: url(../img/banner.png); /* Подключаем фоновое изображение*/
-      background-repeat: no-repeat; /* Однофоновое изображение без повторения*/
-      background-position: center; /* Центруем изображение */
-      background-size: cover; /* Масшстабируем изображение с сохранением пропорций, так чтобы его ширина или высота равнялась ширине или высоте блока*/
-      padding: 300px 0; /* Внутренний отступы сверху и снизу 100px */
+      background-image: url(../img/banner.png);
+      /* Подключаем фоновое изображение*/
+      background-repeat: no-repeat;
+      /* Однофоновое изображение без повторения*/
+      background-position: center;
+      /* Центруем изображение */
+      background-size: cover;
+      /* Масшстабируем изображение с сохранением пропорций, так чтобы его ширина или высота равнялась ширине или высоте блока*/
+      padding: 300px 0;
+      /* Внутренний отступы сверху и снизу 100px */
       /* height: 740px; Высота изображения */
-      text-align: center; /* центруем тест по центру */
+      text-align: center;
+      /* центруем тест по центру */
 }
+
 .stat {
-      text-align: center; /* центруем текст */
-      display: flex; /* юзаем flexbox */
-      justify-content: space-between; /* располагаем элементы от края до края*/
-      max-width: 900px; /* задаем ширину блока */
-      margin: -200px auto 0; /* поднимаем его на 200px вверх*/
+      text-align: center;
+      /* центруем текст */
+      display: flex;
+      /* юзаем flexbox */
+      justify-content: space-between;
+      /* располагаем элементы от края до края*/
+      max-width: 780px;
+      /* задаем ширину блока */
+      margin: -150px auto 0;
+      /* поднимаем его на 200px вверх*/
+      padding-top: 70px;
+      padding-bottom: 35px;
 }
+
 .stat-item h2 {
       font-size: 72px;
       color: #F7654A;
+      margin-top: 0;
+      margin-bottom: 22px;
 }
+
 .stat-item h3 {
       font-size: 36px;
+      /*Стилизуем заголовки класса stst-item*/
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 11px;
 }
+
 .stat-item p {
       color: #999999;
+      margin-top: 0;
+}
+
+.box-party {
+      display: flex;
+      /* Подключает flex */
+      justify-content: space-between;
+      /* Расположение от края до края */
+      align-items: flex-start;
+      margin-top: 55px;
+      margin-bottom: 85px;
+}
+
+.box-party>div {
+      /* Ограничиваем размеры блоков, для старых браузеров */
+      flex-basis: 31.5%;
+      max-width: 31.5;
+}
+
+.box-party img {
+      /* Добавляем адаптивность */
+      width: 100%;
+}
+
+.box-party h3 {
+      /* Добавляем оранжевую черточку */
+      position: relative;
+      padding-top: 27px;
+      /* Отодвигаем тест от черточки */
+      margin-top: 13px;
+      letter-spacing: 1.4px;
+}
+
+.box-party h3::before {
+      content: '';
+      /* обязательное свойство, без него не работает */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 55px;
+      /* Ширина и высота черточки */
+      height: 6px;
+      background-color: #F7654A;
+}
+
+.contact {
+      background-color: #F7654A;
+      color: #fff;
+}
+
+.box-contact {
+      display: flex;
+      /* Подключаем flex */
+      justify-content: space-between;
+      /* Расположение от края до края */
+      align-items: center;
+      /* Выравниваем по центру */
+}
+
+.box-contact h3 {
+      /* Стилизуем заголовок */
+      font-size: 48px;
+      letter-spacing: 0.02em;
+      /* Интервал между буквами */
+}
+
+.box-contact p {
+      font-size: 24px;
+      letter-spacing: 0.02em;
+      /* Интервал между буквами */
+}
+
+.box-contact button {
+      /* Стилизуем кнопку "Ваш запрос" */
+      background-color: #fff;
+      /* Цвет фона */
+      border: none;
+      /* Уюираем стандартные рамки */
+      padding: 15px 20px;
+      /* Добавляем внутренние отступы дабы сделать кнопку больше */
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+}
+
+.grid {
+      /* Включает сетку GRID */
+      text-align: center;
+      display: grid;
+      grid-template-areas: "a b c""d e f";
+      grid-gap: 20px;
+}
+
+.grid-item {
+      /* Стилизуем иконки */
+      background-color: #f7f7f7;
+      padding: 20px;
+}
+
+.grid-one {
+      grid-area: a;
+}
+
+.grid-two {
+      grid-area: b;
+}
+
+.grid-three {
+      grid-area: c;
+}
+
+.grid-four {
+      grid-area: d;
+}
+
+.grid-five {
+      grid-area: e;
+}
+
+.grid-six {
+      grid-area: f;
+}
+
+.grid-photo {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-photo-item {
+      height: 100%;
+      position: relative;
+}
+
+.grid-photo-item::before {
+      content: '';
+      background-color: rgba(64, 65, 73, 0.5);
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: 0.3s;
+}
+
+.grid-photo-item:hover::before {
+      background-color: rgba(64, 65, 73, 0);
+}
+
+.grid-photo-item img {
+      width: 100%;
+      height: 100%;
 }
